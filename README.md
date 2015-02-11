@@ -1,3 +1,5 @@
+NOTE: You'll need to drag Artsy.xcodeproj and Pods/Pods.xcodeproj into the testing workspace to make this work.
+
 ![Artsy](AppIcon_114.png "Artsy")
 
 ## Artsy Eigen
