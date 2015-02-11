@@ -389,6 +389,10 @@
 		60FAEF43179843080031C88B /* ARFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAEF42179843080031C88B /* ARFavoritesViewController.m */; };
 		6C55DE07E86540899869A357 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		7BAB70E261299573481071A9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AABCA8DF484E65EF3CC11FA /* libPods.a */; };
+		A485BBEF1A8BE80400304DFF /* ArtisanSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A485BBD81A8BE80400304DFF /* ArtisanSDK.bundle */; };
+		A485BBF01A8BE80400304DFF /* libARSBJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A485BBED1A8BE80400304DFF /* libARSBJSON.a */; };
+		A485BBF11A8BE80600304DFF /* libArtisanSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A485BBEE1A8BE80400304DFF /* libArtisanSDK.a */; };
+		A485BBF41A8BEA7400304DFF /* ARTLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A485BBF31A8BEA7400304DFF /* ARTLogger.m */; };
 		B30FEF5A181EEA47009E4EAD /* ARBidButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B30FEF59181EEA47009E4EAD /* ARBidButtonTests.m */; };
 		B316E2F418170DF40086CCDB /* SaleArtwork.m in Sources */ = {isa = PBXBuildFile; fileRef = B316E2F318170DF40086CCDB /* SaleArtwork.m */; };
 		B316E2F7181713110086CCDB /* Bidder.m in Sources */ = {isa = PBXBuildFile; fileRef = B316E2F6181713110086CCDB /* Bidder.m */; };
@@ -448,7 +452,6 @@
 		E65BB5231A408A29004C4DB4 /* TextfieldClearButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E65BB5221A408A29004C4DB4 /* TextfieldClearButton.png */; };
 		E66492D318B7D26B00531B8F /* Parallax_Overlay_Top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E66492D218B7D26B00531B8F /* Parallax_Overlay_Top@2x.png */; };
 		E667F12218EC825D00503F50 /* ARHTTPRequestOperationLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E667F12118EC825D00503F50 /* ARHTTPRequestOperationLogger.m */; };
-		E667F12918EC82AB00503F50 /* ARLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E667F12718EC82AB00503F50 /* ARLogger.m */; };
 		E667F12C18EC889F00503F50 /* ARLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E667F12B18EC889F00503F50 /* ARLogFormatter.m */; };
 		E66A0A8319C2125400ECEB1A /* full_logo_white_large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E66A0A8219C2125400ECEB1A /* full_logo_white_large@2x.png */; };
 		E66EE4AF196460620081ED0C /* ARFavoriteItemModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E66EE4AE196460620081ED0C /* ARFavoriteItemModule.m */; };
@@ -1222,6 +1225,30 @@
 		8A6745B7A19EEDA119AEA48E /* Pods-Artsy Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artsy Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Artsy Tests/Pods-Artsy Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E3DD2A89F196F5E5BFB9689 /* Pods-Artsy Tests.store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artsy Tests.store.xcconfig"; path = "Pods/Target Support Files/Pods-Artsy Tests/Pods-Artsy Tests.store.xcconfig"; sourceTree = "<group>"; };
 		A060C6085108B7738F5ADD02 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A485BBD81A8BE80400304DFF /* ArtisanSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArtisanSDK.bundle; path = "../../Library/Developer/Xcode/DerivedData/UXFlip-Testing-eqlbtjtodcgnlbfpqegfcfrqwmua/Build/Products/Debug-iphoneos/ArtisanSDK.bundle"; sourceTree = "<group>"; };
+		A485BBDA1A8BE80400304DFF /* ARBillboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARBillboardManager.h; sourceTree = "<group>"; };
+		A485BBDB1A8BE80400304DFF /* ARExperiment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARExperiment.h; sourceTree = "<group>"; };
+		A485BBDC1A8BE80400304DFF /* ARExperimentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARExperimentDetails.h; sourceTree = "<group>"; };
+		A485BBDD1A8BE80400304DFF /* ARExperimentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARExperimentManager.h; sourceTree = "<group>"; };
+		A485BBDE1A8BE80400304DFF /* ARInCodeExperimentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARInCodeExperimentDetails.h; sourceTree = "<group>"; };
+		A485BBDF1A8BE80400304DFF /* ARManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARManager.h; sourceTree = "<group>"; };
+		A485BBE01A8BE80400304DFF /* ARPowerHookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARPowerHookManager.h; sourceTree = "<group>"; };
+		A485BBE11A8BE80400304DFF /* ARPowerHookVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARPowerHookVariable.h; sourceTree = "<group>"; };
+		A485BBE21A8BE80400304DFF /* ARProfileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARProfileManager.h; sourceTree = "<group>"; };
+		A485BBE31A8BE80400304DFF /* ARPurchaseWorkflowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARPurchaseWorkflowManager.h; sourceTree = "<group>"; };
+		A485BBE41A8BE80400304DFF /* ARSocialSharingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSocialSharingManager.h; sourceTree = "<group>"; };
+		A485BBE51A8BE80400304DFF /* ARStoreKitTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARStoreKitTracker.h; sourceTree = "<group>"; };
+		A485BBE61A8BE80400304DFF /* ArtisanEventTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtisanEventTags.h; sourceTree = "<group>"; };
+		A485BBE71A8BE80400304DFF /* ArtisanSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtisanSDK.h; sourceTree = "<group>"; };
+		A485BBE81A8BE80400304DFF /* ARTrackingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTrackingManager.h; sourceTree = "<group>"; };
+		A485BBE91A8BE80400304DFF /* UIView+ArtisanEventTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ArtisanEventTags.h"; sourceTree = "<group>"; };
+		A485BBEA1A8BE80400304DFF /* UIView+ArtisanNameTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ArtisanNameTag.h"; sourceTree = "<group>"; };
+		A485BBEB1A8BE80400304DFF /* UIViewController+ArtisanEventTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ArtisanEventTags.h"; sourceTree = "<group>"; };
+		A485BBEC1A8BE80400304DFF /* UIViewController+ArtisanNameTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ArtisanNameTag.h"; sourceTree = "<group>"; };
+		A485BBED1A8BE80400304DFF /* libARSBJSON.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libARSBJSON.a; path = "../../Library/Developer/Xcode/DerivedData/UXFlip-Testing-eqlbtjtodcgnlbfpqegfcfrqwmua/Build/Products/Debug-iphoneos/libARSBJSON.a"; sourceTree = "<group>"; };
+		A485BBEE1A8BE80400304DFF /* libArtisanSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libArtisanSDK.a; path = "../../Library/Developer/Xcode/DerivedData/UXFlip-Testing-eqlbtjtodcgnlbfpqegfcfrqwmua/Build/Products/Debug-iphoneos/libArtisanSDK.a"; sourceTree = "<group>"; };
+		A485BBF21A8BEA7400304DFF /* ARTLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTLogger.h; sourceTree = "<group>"; };
+		A485BBF31A8BEA7400304DFF /* ARTLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTLogger.m; sourceTree = "<group>"; };
 		B30FEF59181EEA47009E4EAD /* ARBidButtonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARBidButtonTests.m; sourceTree = "<group>"; };
 		B316E2F218170DF40086CCDB /* SaleArtwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaleArtwork.h; sourceTree = "<group>"; };
 		B316E2F318170DF40086CCDB /* SaleArtwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaleArtwork.m; sourceTree = "<group>"; };
@@ -1316,8 +1343,6 @@
 		E66492D218B7D26B00531B8F /* Parallax_Overlay_Top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Parallax_Overlay_Top@2x.png"; sourceTree = "<group>"; };
 		E667F12018EC825D00503F50 /* ARHTTPRequestOperationLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARHTTPRequestOperationLogger.h; path = Artsy/Classes/Utils/Logging/ARHTTPRequestOperationLogger.h; sourceTree = SOURCE_ROOT; };
 		E667F12118EC825D00503F50 /* ARHTTPRequestOperationLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARHTTPRequestOperationLogger.m; path = Artsy/Classes/Utils/Logging/ARHTTPRequestOperationLogger.m; sourceTree = SOURCE_ROOT; };
-		E667F12618EC82AB00503F50 /* ARLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARLogger.h; path = Logging/ARLogger.h; sourceTree = "<group>"; };
-		E667F12718EC82AB00503F50 /* ARLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARLogger.m; path = Logging/ARLogger.m; sourceTree = "<group>"; };
 		E667F12A18EC889F00503F50 /* ARLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARLogFormatter.h; path = Logging/ARLogFormatter.h; sourceTree = "<group>"; };
 		E667F12B18EC889F00503F50 /* ARLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARLogFormatter.m; path = Logging/ARLogFormatter.m; sourceTree = "<group>"; };
 		E66A0A8219C2125400ECEB1A /* full_logo_white_large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full_logo_white_large@2x.png"; sourceTree = "<group>"; };
@@ -1398,8 +1423,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				60935A461A69CFEE00129CE1 /* WebKit.framework in Frameworks */,
+				A485BBF01A8BE80400304DFF /* libARSBJSON.a in Frameworks */,
 				60935A441A69CFE700129CE1 /* MobileCoreServices.framework in Frameworks */,
 				7BAB70E261299573481071A9 /* libPods.a in Frameworks */,
+				A485BBF11A8BE80600304DFF /* libArtisanSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2166,6 +2193,7 @@
 		49BA7DF41655ABE600C06572 = {
 			isa = PBXGroup;
 			children = (
+				A485BBD71A8BE7F000304DFF /* ArtisanSDK */,
 				60FFE3D5188E916C0012B485 /* Documentation */,
 				49BA7E091655ABE600C06572 /* Artsy */,
 				B3ECE82B1819D1E6009F5C5B /* Artsy Tests */,
@@ -3233,6 +3261,44 @@
 			name = Fair;
 			sourceTree = "<group>";
 		};
+		A485BBD71A8BE7F000304DFF /* ArtisanSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A485BBD81A8BE80400304DFF /* ArtisanSDK.bundle */,
+				A485BBD91A8BE80400304DFF /* ARUXFLIPHeaders */,
+				A485BBED1A8BE80400304DFF /* libARSBJSON.a */,
+				A485BBEE1A8BE80400304DFF /* libArtisanSDK.a */,
+			);
+			name = ArtisanSDK;
+			sourceTree = "<group>";
+		};
+		A485BBD91A8BE80400304DFF /* ARUXFLIPHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				A485BBDA1A8BE80400304DFF /* ARBillboardManager.h */,
+				A485BBDB1A8BE80400304DFF /* ARExperiment.h */,
+				A485BBDC1A8BE80400304DFF /* ARExperimentDetails.h */,
+				A485BBDD1A8BE80400304DFF /* ARExperimentManager.h */,
+				A485BBDE1A8BE80400304DFF /* ARInCodeExperimentDetails.h */,
+				A485BBDF1A8BE80400304DFF /* ARManager.h */,
+				A485BBE01A8BE80400304DFF /* ARPowerHookManager.h */,
+				A485BBE11A8BE80400304DFF /* ARPowerHookVariable.h */,
+				A485BBE21A8BE80400304DFF /* ARProfileManager.h */,
+				A485BBE31A8BE80400304DFF /* ARPurchaseWorkflowManager.h */,
+				A485BBE41A8BE80400304DFF /* ARSocialSharingManager.h */,
+				A485BBE51A8BE80400304DFF /* ARStoreKitTracker.h */,
+				A485BBE61A8BE80400304DFF /* ArtisanEventTags.h */,
+				A485BBE71A8BE80400304DFF /* ArtisanSDK.h */,
+				A485BBE81A8BE80400304DFF /* ARTrackingManager.h */,
+				A485BBE91A8BE80400304DFF /* UIView+ArtisanEventTags.h */,
+				A485BBEA1A8BE80400304DFF /* UIView+ArtisanNameTag.h */,
+				A485BBEB1A8BE80400304DFF /* UIViewController+ArtisanEventTags.h */,
+				A485BBEC1A8BE80400304DFF /* UIViewController+ArtisanNameTag.h */,
+			);
+			name = ARUXFLIPHeaders;
+			path = "../../Library/Developer/Xcode/DerivedData/UXFlip-Testing-eqlbtjtodcgnlbfpqegfcfrqwmua/Build/Products/Debug-iphoneos/ARUXFLIPHeaders";
+			sourceTree = "<group>";
+		};
 		B31BBE0F181EF9F7001C623C /* View Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -3341,12 +3407,12 @@
 		E667F12318EC827B00503F50 /* Logging */ = {
 			isa = PBXGroup;
 			children = (
-				E667F12618EC82AB00503F50 /* ARLogger.h */,
-				E667F12718EC82AB00503F50 /* ARLogger.m */,
 				E667F12018EC825D00503F50 /* ARHTTPRequestOperationLogger.h */,
 				E667F12118EC825D00503F50 /* ARHTTPRequestOperationLogger.m */,
 				E667F12A18EC889F00503F50 /* ARLogFormatter.h */,
 				E667F12B18EC889F00503F50 /* ARLogFormatter.m */,
+				A485BBF21A8BEA7400304DFF /* ARTLogger.h */,
+				A485BBF31A8BEA7400304DFF /* ARTLogger.m */,
 			);
 			name = Logging;
 			sourceTree = "<group>";
@@ -3573,6 +3639,7 @@
 				E6543CDB18AD795E00A6B9AF /* Parallax_Overlay_Bottom@2x.png in Resources */,
 				5E6621DD19768F750064FC52 /* MapIcon@2x.png in Resources */,
 				E60673B319BE4E8C00EF05EB /* full_logo_white_small@2x.png in Resources */,
+				A485BBEF1A8BE80400304DFF /* ArtisanSDK.bundle in Resources */,
 				608B707017D4A1C80088A56C /* BackArrow_Highlighted@2x.png in Resources */,
 				3C4AE98719094DAA009C0E8B /* MapAnnotation_Search@2x.png in Resources */,
 				3C4AE98519094DAA009C0E8B /* MapAnnotation_Restroom@2x.png in Resources */,
@@ -3953,7 +4020,7 @@
 				342F9A60D7F0C30310535232 /* UIImage+ImageFromColor.m in Sources */,
 				342F9A43E9B4295EF2CE07E2 /* UIViewController+FullScreenLoading.m in Sources */,
 				342F91B952D170DCF5A0CDA4 /* UIImageView+AsyncImageLoading.m in Sources */,
-				E667F12918EC82AB00503F50 /* ARLogger.m in Sources */,
+				A485BBF41A8BEA7400304DFF /* ARTLogger.m in Sources */,
 				3C94B2DA192BF109008D04DF /* ARFairMapPreview.m in Sources */,
 				E6C13AC41A23AB160050AB53 /* ARPersonalizeWebViewController.m in Sources */,
 				342F9F54666BFDFF200E31AE /* UIView+HitTestExpansion.m in Sources */,
@@ -4216,7 +4283,9 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Artsy/App/Artsy-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -4238,6 +4307,95 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				INFOPLIST_FILE = "Artsy/App/Artsy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/UXFlip-Testing-eqlbtjtodcgnlbfpqegfcfrqwmua/Build/Products/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"Pods-AFHTTPRequestOperationLogger\"",
+					"-l\"Pods-AFNetworking\"",
+					"-l\"Pods-AFOAuth1Client\"",
+					"-l\"Pods-ALPValidator\"",
+					"-l\"Pods-ARASCIISwizzle\"",
+					"-l\"Pods-ARAnalytics\"",
+					"-l\"Pods-ARCollectionViewMasonryLayout\"",
+					"-l\"Pods-ARGenericTableViewController\"",
+					"-l\"Pods-ARTiledImageView\"",
+					"-l\"Pods-Artsy+OSSUIFonts\"",
+					"-l\"Pods-Artsy+UIColors\"",
+					"-l\"Pods-Artsy+UILabels\"",
+					"-l\"Pods-Artsy-UIButtons\"",
+					"-l\"Pods-Bolts\"",
+					"-l\"Pods-CocoaLumberjack\"",
+					"-l\"Pods-DHCShakeNotifier\"",
+					"-l\"Pods-DRKonamiCode\"",
+					"-l\"Pods-EDColor\"",
+					"-l\"Pods-FLKAutoLayout\"",
+					"-l\"Pods-FODFormKit\"",
+					"-l\"Pods-FXBlurView\"",
+					"-l\"Pods-Facebook-iOS-SDK\"",
+					"-l\"Pods-HockeySDK\"",
+					"-l\"Pods-ISO8601DateFormatter\"",
+					"-l\"Pods-JLRoutes\"",
+					"-l\"Pods-JSDecoupledAppDelegate\"",
+					"-l\"Pods-KSDeferred\"",
+					"-l\"Pods-MMMarkdown\"",
+					"-l\"Pods-Mantle\"",
+					"-l\"Pods-Mixpanel\"",
+					"-l\"Pods-MultiDelegate\"",
+					"-l\"Pods-NAMapKit\"",
+					"-l\"Pods-ORKeyboardReactingApplication\"",
+					"-l\"Pods-ORStackView\"",
+					"-l\"Pods-ObjectiveSugar\"",
+					"-l\"Pods-RSSwizzle\"",
+					"-l\"Pods-ReactiveCocoa\"",
+					"-l\"Pods-SDWebImage\"",
+					"-l\"Pods-TSMiniWebBrowser@dblock\"",
+					"-l\"Pods-UIAlertView+Blocks\"",
+					"-l\"Pods-UICKeyChainStore\"",
+					"-l\"Pods-UIView+BooleanAnimations\"",
+					"-l\"Pods-VCRURLConnection\"",
+					"-l\"Pods-iRate\"",
+					"-l\"Pods-libextobjc\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"CrashReporter\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-lz",
+					"-framework",
+					CoreData,
+					"-framework",
+					CFNetwork,
+				);
 				PRODUCT_NAME = Artsy;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4269,7 +4427,9 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Artsy/App/Artsy-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -4291,6 +4451,95 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				INFOPLIST_FILE = "Artsy/App/Artsy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/UXFlip-Testing-eqlbtjtodcgnlbfpqegfcfrqwmua/Build/Products/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"Pods-AFHTTPRequestOperationLogger\"",
+					"-l\"Pods-AFNetworking\"",
+					"-l\"Pods-AFOAuth1Client\"",
+					"-l\"Pods-ALPValidator\"",
+					"-l\"Pods-ARASCIISwizzle\"",
+					"-l\"Pods-ARAnalytics\"",
+					"-l\"Pods-ARCollectionViewMasonryLayout\"",
+					"-l\"Pods-ARGenericTableViewController\"",
+					"-l\"Pods-ARTiledImageView\"",
+					"-l\"Pods-Artsy+OSSUIFonts\"",
+					"-l\"Pods-Artsy+UIColors\"",
+					"-l\"Pods-Artsy+UILabels\"",
+					"-l\"Pods-Artsy-UIButtons\"",
+					"-l\"Pods-Bolts\"",
+					"-l\"Pods-CocoaLumberjack\"",
+					"-l\"Pods-DHCShakeNotifier\"",
+					"-l\"Pods-DRKonamiCode\"",
+					"-l\"Pods-EDColor\"",
+					"-l\"Pods-FLKAutoLayout\"",
+					"-l\"Pods-FODFormKit\"",
+					"-l\"Pods-FXBlurView\"",
+					"-l\"Pods-Facebook-iOS-SDK\"",
+					"-l\"Pods-HockeySDK\"",
+					"-l\"Pods-ISO8601DateFormatter\"",
+					"-l\"Pods-JLRoutes\"",
+					"-l\"Pods-JSDecoupledAppDelegate\"",
+					"-l\"Pods-KSDeferred\"",
+					"-l\"Pods-MMMarkdown\"",
+					"-l\"Pods-Mantle\"",
+					"-l\"Pods-Mixpanel\"",
+					"-l\"Pods-MultiDelegate\"",
+					"-l\"Pods-NAMapKit\"",
+					"-l\"Pods-ORKeyboardReactingApplication\"",
+					"-l\"Pods-ORStackView\"",
+					"-l\"Pods-ObjectiveSugar\"",
+					"-l\"Pods-RSSwizzle\"",
+					"-l\"Pods-ReactiveCocoa\"",
+					"-l\"Pods-SDWebImage\"",
+					"-l\"Pods-TSMiniWebBrowser@dblock\"",
+					"-l\"Pods-UIAlertView+Blocks\"",
+					"-l\"Pods-UICKeyChainStore\"",
+					"-l\"Pods-UIView+BooleanAnimations\"",
+					"-l\"Pods-VCRURLConnection\"",
+					"-l\"Pods-iRate\"",
+					"-l\"Pods-libextobjc\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"CrashReporter\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-lz",
+					"-framework",
+					CoreData,
+					"-framework",
+					CFNetwork,
+				);
 				PRODUCT_NAME = Artsy;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4346,7 +4595,9 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Artsy/App/Artsy-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -4370,6 +4621,95 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				INFOPLIST_FILE = "Artsy/App/Artsy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/UXFlip-Testing-eqlbtjtodcgnlbfpqegfcfrqwmua/Build/Products/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"Pods-AFHTTPRequestOperationLogger\"",
+					"-l\"Pods-AFNetworking\"",
+					"-l\"Pods-AFOAuth1Client\"",
+					"-l\"Pods-ALPValidator\"",
+					"-l\"Pods-ARASCIISwizzle\"",
+					"-l\"Pods-ARAnalytics\"",
+					"-l\"Pods-ARCollectionViewMasonryLayout\"",
+					"-l\"Pods-ARGenericTableViewController\"",
+					"-l\"Pods-ARTiledImageView\"",
+					"-l\"Pods-Artsy+OSSUIFonts\"",
+					"-l\"Pods-Artsy+UIColors\"",
+					"-l\"Pods-Artsy+UILabels\"",
+					"-l\"Pods-Artsy-UIButtons\"",
+					"-l\"Pods-Bolts\"",
+					"-l\"Pods-CocoaLumberjack\"",
+					"-l\"Pods-DHCShakeNotifier\"",
+					"-l\"Pods-DRKonamiCode\"",
+					"-l\"Pods-EDColor\"",
+					"-l\"Pods-FLKAutoLayout\"",
+					"-l\"Pods-FODFormKit\"",
+					"-l\"Pods-FXBlurView\"",
+					"-l\"Pods-Facebook-iOS-SDK\"",
+					"-l\"Pods-HockeySDK\"",
+					"-l\"Pods-ISO8601DateFormatter\"",
+					"-l\"Pods-JLRoutes\"",
+					"-l\"Pods-JSDecoupledAppDelegate\"",
+					"-l\"Pods-KSDeferred\"",
+					"-l\"Pods-MMMarkdown\"",
+					"-l\"Pods-Mantle\"",
+					"-l\"Pods-Mixpanel\"",
+					"-l\"Pods-MultiDelegate\"",
+					"-l\"Pods-NAMapKit\"",
+					"-l\"Pods-ORKeyboardReactingApplication\"",
+					"-l\"Pods-ORStackView\"",
+					"-l\"Pods-ObjectiveSugar\"",
+					"-l\"Pods-RSSwizzle\"",
+					"-l\"Pods-ReactiveCocoa\"",
+					"-l\"Pods-SDWebImage\"",
+					"-l\"Pods-TSMiniWebBrowser@dblock\"",
+					"-l\"Pods-UIAlertView+Blocks\"",
+					"-l\"Pods-UICKeyChainStore\"",
+					"-l\"Pods-UIView+BooleanAnimations\"",
+					"-l\"Pods-VCRURLConnection\"",
+					"-l\"Pods-iRate\"",
+					"-l\"Pods-libextobjc\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"CrashReporter\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-lz",
+					"-framework",
+					CoreData,
+					"-framework",
+					CFNetwork,
+				);
 				PRODUCT_NAME = Artsy;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4470,7 +4810,9 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Artsy/App/Artsy-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -4493,6 +4835,95 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				INFOPLIST_FILE = "Artsy/App/Artsy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/UXFlip-Testing-eqlbtjtodcgnlbfpqegfcfrqwmua/Build/Products/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"Pods-AFHTTPRequestOperationLogger\"",
+					"-l\"Pods-AFNetworking\"",
+					"-l\"Pods-AFOAuth1Client\"",
+					"-l\"Pods-ALPValidator\"",
+					"-l\"Pods-ARASCIISwizzle\"",
+					"-l\"Pods-ARAnalytics\"",
+					"-l\"Pods-ARCollectionViewMasonryLayout\"",
+					"-l\"Pods-ARGenericTableViewController\"",
+					"-l\"Pods-ARTiledImageView\"",
+					"-l\"Pods-Artsy+OSSUIFonts\"",
+					"-l\"Pods-Artsy+UIColors\"",
+					"-l\"Pods-Artsy+UILabels\"",
+					"-l\"Pods-Artsy-UIButtons\"",
+					"-l\"Pods-Bolts\"",
+					"-l\"Pods-CocoaLumberjack\"",
+					"-l\"Pods-DHCShakeNotifier\"",
+					"-l\"Pods-DRKonamiCode\"",
+					"-l\"Pods-EDColor\"",
+					"-l\"Pods-FLKAutoLayout\"",
+					"-l\"Pods-FODFormKit\"",
+					"-l\"Pods-FXBlurView\"",
+					"-l\"Pods-Facebook-iOS-SDK\"",
+					"-l\"Pods-HockeySDK\"",
+					"-l\"Pods-ISO8601DateFormatter\"",
+					"-l\"Pods-JLRoutes\"",
+					"-l\"Pods-JSDecoupledAppDelegate\"",
+					"-l\"Pods-KSDeferred\"",
+					"-l\"Pods-MMMarkdown\"",
+					"-l\"Pods-Mantle\"",
+					"-l\"Pods-Mixpanel\"",
+					"-l\"Pods-MultiDelegate\"",
+					"-l\"Pods-NAMapKit\"",
+					"-l\"Pods-ORKeyboardReactingApplication\"",
+					"-l\"Pods-ORStackView\"",
+					"-l\"Pods-ObjectiveSugar\"",
+					"-l\"Pods-RSSwizzle\"",
+					"-l\"Pods-ReactiveCocoa\"",
+					"-l\"Pods-SDWebImage\"",
+					"-l\"Pods-TSMiniWebBrowser@dblock\"",
+					"-l\"Pods-UIAlertView+Blocks\"",
+					"-l\"Pods-UICKeyChainStore\"",
+					"-l\"Pods-UIView+BooleanAnimations\"",
+					"-l\"Pods-VCRURLConnection\"",
+					"-l\"Pods-iRate\"",
+					"-l\"Pods-libextobjc\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"CrashReporter\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-lz",
+					"-framework",
+					CoreData,
+					"-framework",
+					CFNetwork,
+				);
 				PRODUCT_NAME = Artsy;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

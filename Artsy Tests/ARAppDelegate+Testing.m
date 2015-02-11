@@ -2,7 +2,7 @@
 
 #import "ARRouter.h"
 #import "ARSwitchBoard.h"
-#import "ARLogger.h"
+#import "ARTLogger.h"
 #import "ARAppDelegate+Testing.h"
 #import "ARDispatchManager.h"
 #import "AROHHTTPNoStubAssertionBot.h"
@@ -50,7 +50,7 @@
 
 - (BOOL)swizzled_application:(id)app didFinishLaunchingWithOptions:(id)opts
 {
-    [[ARLogger sharedLogger] startLogging];
+    [[ARTLogger sharedLogger] startLogging];
     return YES;
 }
 

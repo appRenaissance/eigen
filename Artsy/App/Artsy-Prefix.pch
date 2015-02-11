@@ -66,7 +66,7 @@
     static const BOOL ARIsRunningInDemoMode = NO;
     #endif
 
-    #import "ARLogger.h"
+    #import "ARTLogger.h"
 
 #endif
 

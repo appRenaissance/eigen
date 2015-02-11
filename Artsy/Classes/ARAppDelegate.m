@@ -33,6 +33,7 @@
 // demo
 #import "ARDemoSplashViewController.h"
 #import "ARShowFeedViewController.h"
+#import <ArtisanSDK/ArtisanSDK.h>
 
 @interface ARAppDelegate()
 @property (strong, nonatomic, readwrite) NSString *referralURLRepresentation;
@@ -91,7 +92,7 @@ static ARAppDelegate *_sharedInstance = nil;
 {
     _landingURLRepresentation = self.landingURLRepresentation ?: @"http://artsy.net";
 
-    [[ARLogger sharedLogger] startLogging];
+    [[ARTLogger sharedLogger] startLogging];
     [FBSettings setDefaultAppID:[ArtsyKeys new].artsyFacebookAppID];
 
     if (ARIsRunningInDemoMode) {
@@ -115,6 +116,8 @@ static ARAppDelegate *_sharedInstance = nil;
         [topVC refreshFeedItems];
 
     }];
+
+    [ARManager startWithAppId:@"54dbb0cb2b2220a96d000001"];
 
     return YES;
 }
@@ -271,7 +274,7 @@ static ARAppDelegate *_sharedInstance = nil;
            [ARDefaults setOnboardingDefaults:features];
 
        } failure:^(NSError *error) {
-           ARErrorLog(@"Couldn't get site features. Error %@", error.localizedDescription);
+           //ARTErrorLog(@"Couldn't get site features. Error %@", error.localizedDescription);
        }];
     }];
 }
