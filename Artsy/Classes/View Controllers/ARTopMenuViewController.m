@@ -62,9 +62,12 @@ static const CGFloat ARSearchMenuButtonDimension = 46;
     [homeButton setTitle:@"HOME" forState:UIControlStateNormal];
     [browseButton setTitle:@"BROWSE" forState:UIControlStateNormal];
     
-    NSString *favoritesButtonText = [ARPowerHookManager getValueForHookById:YouTabTextPowerHookId];
-    NSLog(@"favoritesButtonText value: %@", favoritesButtonText);
-    [favoritesButton setTitle:favoritesButtonText forState:UIControlStateNormal];
+
+    [ARManager onFirstPlaylistDownloaded:^{
+        NSString *favoritesButtonText = [ARPowerHookManager getValueForHookById:YouTabTextPowerHookId];
+        NSLog(@"favoritesButtonText value: %@", favoritesButtonText);
+        [favoritesButton setTitle:favoritesButtonText forState:UIControlStateNormal];
+    }];
 
     NSArray *buttons = @[searchButton, homeButton, browseButton, favoritesButton];
 

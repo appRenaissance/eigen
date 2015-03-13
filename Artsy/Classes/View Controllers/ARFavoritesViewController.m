@@ -117,19 +117,6 @@
     _artworksModule.layoutProvider = self;
     _artistsModule = [[ARFavoriteItemModule alloc] init];
     _genesModule = [[ARFavoriteItemModule alloc] init];
-    
-    NSString *powerHookDisplayMode = [ARPowerHookManager getValueForHookById:SelectedFavoritesTabPowerHookId];
-    NSLog(@"powerHookDisplayMode value: %@", powerHookDisplayMode);
-    if ([powerHookDisplayMode isEqualToString:@"ARTWORKS"]) {
-        self.displayMode = ARFavoritesDisplayModeArtworks;
-    } else if ([powerHookDisplayMode isEqualToString:@"ARTISTS"]) {
-        self.displayMode = ARFavoritesDisplayModeArtworks;
-    } else if ([powerHookDisplayMode isEqualToString:@"CATEGORIES"]) {
-        self.displayMode = ARFavoritesDisplayModeGenes;
-    } else {
-        [NSException raise:@"Unknown display mode power hook value" format:@"Unknown value: %@", powerHookDisplayMode];
-    }
-
 
     self.embeddedItemsVC.scrollDelegate = [ARScrollNavigationChief chief];
 
@@ -138,6 +125,26 @@
     self.collectionView.scrollsToTop = YES;
 
     [super viewDidLoad];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    // TODO: This doens't work for some reason and I'm tired of looking at it. Fix it later.
+    NSString *powerHookDisplayMode = [ARPowerHookManager getValueForHookById:SelectedFavoritesTabPowerHookId];
+    NSLog(@"powerHookDisplayMode value: %@", powerHookDisplayMode);
+    if ([powerHookDisplayMode isEqualToString:@"ARTWORKS"]) {
+        self.displayMode = ARFavoritesDisplayModeArtworks;
+    } else if ([powerHookDisplayMode isEqualToString:@"ARTISTS"]) {
+        self.displayMode = ARFavoritesDisplayModeArtists;
+    } else if ([powerHookDisplayMode isEqualToString:@"CATEGORIES"]) {
+        self.displayMode = ARFavoritesDisplayModeGenes;
+    } else {
+        [NSException raise:@"Unknown display mode power hook value" format:@"Unknown value: %@", powerHookDisplayMode];
+    }
+    
+    [self hideEmptyState];
+    [self updateView];
 }
 
 - (UICollectionView *)collectionView
