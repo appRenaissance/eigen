@@ -35,6 +35,9 @@
 #import "ARShowFeedViewController.h"
 #import <ArtisanSDK/ArtisanSDK.h>
 
+#import "ArtisanEnvironments.h"
+
+
 @interface ARAppDelegate()
 @property (strong, nonatomic, readwrite) NSString *referralURLRepresentation;
 @property (strong, nonatomic, readwrite) NSString *landingURLRepresentation;
@@ -116,8 +119,30 @@ static ARAppDelegate *_sharedInstance = nil;
         [topVC refreshFeedItems];
 
     }];
-
-    [ARManager startWithAppId:@"54dbb0cb2b2220a96d000001"];
+    
+    
+      ///////////////////
+     // Artisan Start //
+    ///////////////////
+    
+    ArtisanEnvironmentConfigurationModel *environmentConfiguration = [[ArtisanEnvironmentConfigurationModel alloc] init];
+    //environmentConfiguration.debugLogging = YES;
+    environmentConfiguration.prettyJSON = YES;
+    environmentConfiguration.echoAnalytics = YES;
+    environmentConfiguration.echoPlaylists = YES;
+    //    environmentConfiguration.alwaysEnableGesture = YES;
+    //    environmentConfiguration.overrideIPAddress = @"http://10.1.10.31:3000";
+    
+    NSString *appId = @"5502f8a47d891c6fd1000001";
+    
+    // Local
+    // [ARManager startWithAppId:[[ADAppIDModel sharedModel] getCurrentAppID] options:[ArtisanEnvironments optionsForLocalEnvironmentWithConfiguration:environmentConfiguration]];
+    
+    // QA3
+    [ARManager startWithAppId:appId options:[ArtisanEnvironments optionsForQA3EnvironmentWithConfiguration:environmentConfiguration]];
+    
+    // Production
+    // [ARManager startWithAppId:[[ADAppIDModel sharedModel] getCurrentAppID] options:[ArtisanEnvironments optionsForLocalEnvironmentWithConfiguration:environmentConfiguration]];
 
     return YES;
 }
