@@ -1,6 +1,10 @@
 #import "ARViewInRoomViewController.h"
 #import "ARFeedImageLoader.h"
 
+// Artisan Added
+#import <ArtisanSDK/ArtisanSDK.h>
+#import "ArtisanArtsyConstants.h"
+
 #define DEBUG_VIEW_IN_ROOM 0
 
 static const CGFloat InitialWidthOfBenchInches = 96;
@@ -95,6 +99,8 @@ static const CGFloat DistanceToTopOfBenchPortrait =  90;
 
         self.artworkImageView.layer.shadowOpacity = 0.3;
     }
+    
+    [ARPowerHookManager executeBlockWithId:ShowAlertWithTextBlockPowerHookId data:@{} context:self];
 
     [super viewDidAppear:animated];
 }

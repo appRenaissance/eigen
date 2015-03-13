@@ -14,6 +14,10 @@
 #import "ARGeneViewController.h"
 #import "ARFavoriteItemViewCell.h"
 
+// Artisan Added
+#import <ArtisanSDK/ArtisanSDK.h>
+#import "ArtisanArtsyConstants.h"
+
 @interface ARFavoritesViewController() <AREmbeddedModelsDelegate, UIScrollViewDelegate, ARSwitchViewDelegate, ARArtworkMasonryLayoutProvider>
 
 @property (nonatomic, strong, readonly) AREmbeddedModelsViewController *embeddedItemsVC;
@@ -113,8 +117,19 @@
     _artworksModule.layoutProvider = self;
     _artistsModule = [[ARFavoriteItemModule alloc] init];
     _genesModule = [[ARFavoriteItemModule alloc] init];
+    
+    NSString *powerHookDisplayMode = [ARPowerHookManager getValueForHookById:SelectedFavoritesTabPowerHookId];
+    NSLog(@"powerHookDisplayMode value: %@", powerHookDisplayMode);
+    if ([powerHookDisplayMode isEqualToString:@"ARTWORKS"]) {
+        self.displayMode = ARFavoritesDisplayModeArtworks;
+    } else if ([powerHookDisplayMode isEqualToString:@"ARTISTS"]) {
+        self.displayMode = ARFavoritesDisplayModeArtworks;
+    } else if ([powerHookDisplayMode isEqualToString:@"CATEGORIES"]) {
+        self.displayMode = ARFavoritesDisplayModeGenes;
+    } else {
+        [NSException raise:@"Unknown display mode power hook value" format:@"Unknown value: %@", powerHookDisplayMode];
+    }
 
-    self.displayMode = ARFavoritesDisplayModeArtworks;
 
     self.embeddedItemsVC.scrollDelegate = [ARScrollNavigationChief chief];
 

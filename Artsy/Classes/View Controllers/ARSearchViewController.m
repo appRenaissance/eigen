@@ -3,6 +3,10 @@
 #import "ARSearchTableViewCell.h"
 #import "UIView+HitTestExpansion.h"
 
+// Artisan Added
+#import <ArtisanSDK/ArtisanSDK.h>
+#import "ArtisanArtsyConstants.h"
+
 @interface ARSearchViewController () <UITextFieldDelegate, UITableViewDelegate>
 @property(readonly, nonatomic) UIActivityIndicatorView *activityIndicator;
 @property(readonly, nonatomic) UITableView *resultsView;
@@ -52,6 +56,11 @@
 
     // input text field
     UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    
+    NSString *initialText = [ARPowerHookManager getValueForHookById:DefaultSearchTextPowerHookId];
+    NSLog(@"Search Field Initial Text value: %@", initialText);
+    [textField setText:initialText];
+    
     [searchBoxView addSubview:textField];
 
     textField.textColor = [UIColor whiteColor];

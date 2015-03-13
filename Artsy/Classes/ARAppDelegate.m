@@ -33,9 +33,12 @@
 // demo
 #import "ARDemoSplashViewController.h"
 #import "ARShowFeedViewController.h"
+
+// Artisan Added
 #import <ArtisanSDK/ArtisanSDK.h>
 
 #import "ArtisanEnvironments.h"
+#import "ArtisanArtsyConstants.h"
 
 
 @interface ARAppDelegate()
@@ -63,6 +66,9 @@ static ARAppDelegate *_sharedInstance = nil;
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // NOTE: This needs to be called here since I'm using a default PH value in the ARTopMenuViewController#viewDidLoad method
+    [self registerArtisanPowerHooks];
+    
     _sharedInstance = self;
 
     if (ARIsRunningInDemoMode) {
@@ -125,13 +131,16 @@ static ARAppDelegate *_sharedInstance = nil;
      // Artisan Start //
     ///////////////////
     
+    // Configuration
+    /////////////////
+    
     ArtisanEnvironmentConfigurationModel *environmentConfiguration = [[ArtisanEnvironmentConfigurationModel alloc] init];
     //environmentConfiguration.debugLogging = YES;
     environmentConfiguration.prettyJSON = YES;
     environmentConfiguration.echoAnalytics = YES;
     environmentConfiguration.echoPlaylists = YES;
-    //    environmentConfiguration.alwaysEnableGesture = YES;
-    //    environmentConfiguration.overrideIPAddress = @"http://10.1.10.31:3000";
+    // environmentConfiguration.alwaysEnableGesture = YES;
+    // environmentConfiguration.overrideIPAddress = @"http://10.1.10.31:3000";
     
     NSString *appId = @"5502f8a47d891c6fd1000001";
     
@@ -145,6 +154,31 @@ static ARAppDelegate *_sharedInstance = nil;
     // [ARManager startWithAppId:[[ADAppIDModel sharedModel] getCurrentAppID] options:[ArtisanEnvironments optionsForLocalEnvironmentWithConfiguration:environmentConfiguration]];
 
     return YES;
+}
+
+- (void)registerArtisanPowerHooks {
+    // Power Hook Registration
+    ///////////////////////////
+    
+    [ARPowerHookManager registerHookWithId:YouTabTextPowerHookId friendlyName:@"Text for the 'You' Tab" defaultValue:@"You"];
+    [ARPowerHookManager registerHookWithId:DefaultSearchTextPowerHookId friendlyName:@"The default search text for the search area" defaultValue:@""];
+    [ARPowerHookManager registerHookWithId:SelectedFavoritesTabPowerHookId friendlyName:@"The selected 'tab' you see when you navigate to the 'You' tab" defaultValue:@"ARTWORKS"];
+    
+    [ARPowerHookManager registerBlockWithId:ShowAlertWithTextBlockPowerHookId
+                               friendlyName:@"Show a Pop Up Alert with the given text"
+                                       data:@{ @"header": @"Default Header", @"body": @"Default Body" }
+                                   andBlock:^(NSDictionary *extra_data, id context) {
+                                       NSString *header = [extra_data objectForKey:@"header"];
+                                       NSString *body   = [extra_data objectForKey:@"body"];
+                                       
+                                       UIAlertView *alert = [[UIAlertView alloc] initWithTitle:header
+                                                                                       message:body
+                                                                                      delegate:nil
+                                                                             cancelButtonTitle:@"OK"
+                                                                             otherButtonTitles:nil];
+                                       [alert show];
+                                   }];
+
 }
 
 - (void)finishDemoSplash

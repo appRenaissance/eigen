@@ -6,6 +6,10 @@
 #import "ARTopMenuNavigationDataSource.h"
 #import "ARSearchViewController.h"
 
+// Artisan Added
+#import <ArtisanSDK/ArtisanSDK.h>
+#import "ArtisanArtsyConstants.h"
+
 @interface ARTopMenuViewController () <ARTabViewDelegate>
 @property (readwrite, nonatomic, strong) NSArray *constraintsForButtons;
 
@@ -57,7 +61,10 @@ static const CGFloat ARSearchMenuButtonDimension = 46;
 
     [homeButton setTitle:@"HOME" forState:UIControlStateNormal];
     [browseButton setTitle:@"BROWSE" forState:UIControlStateNormal];
-    [favoritesButton setTitle:@"YOU" forState:UIControlStateNormal];
+    
+    NSString *favoritesButtonText = [ARPowerHookManager getValueForHookById:YouTabTextPowerHookId];
+    NSLog(@"favoritesButtonText value: %@", favoritesButtonText);
+    [favoritesButton setTitle:favoritesButtonText forState:UIControlStateNormal];
 
     NSArray *buttons = @[searchButton, homeButton, browseButton, favoritesButton];
 
