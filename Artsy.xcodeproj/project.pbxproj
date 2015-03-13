@@ -389,9 +389,6 @@
 		60FAEF43179843080031C88B /* ARFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAEF42179843080031C88B /* ARFavoritesViewController.m */; };
 		6C55DE07E86540899869A357 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		7BAB70E261299573481071A9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AABCA8DF484E65EF3CC11FA /* libPods.a */; };
-		A485BBEF1A8BE80400304DFF /* ArtisanSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A485BBD81A8BE80400304DFF /* ArtisanSDK.bundle */; };
-		A485BBF01A8BE80400304DFF /* libARSBJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A485BBED1A8BE80400304DFF /* libARSBJSON.a */; };
-		A485BBF11A8BE80600304DFF /* libArtisanSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A485BBEE1A8BE80400304DFF /* libArtisanSDK.a */; };
 		A485BBF41A8BEA7400304DFF /* ARTLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A485BBF31A8BEA7400304DFF /* ARTLogger.m */; };
 		B30FEF5A181EEA47009E4EAD /* ARBidButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B30FEF59181EEA47009E4EAD /* ARBidButtonTests.m */; };
 		B316E2F418170DF40086CCDB /* SaleArtwork.m in Sources */ = {isa = PBXBuildFile; fileRef = B316E2F318170DF40086CCDB /* SaleArtwork.m */; };
@@ -427,6 +424,8 @@
 		CBB25B3C17F36DDE00C31446 /* ARFeaturedArtworksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB25B3B17F36DDE00C31446 /* ARFeaturedArtworksViewController.m */; };
 		CBB469D0181F1F1200B5692B /* Bid.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB469CF181F1F1200B5692B /* Bid.m */; };
 		CBE939F817FA336C00AD7DDD /* ARArtworkBlurbView.m in Sources */ = {isa = PBXBuildFile; fileRef = 601F029417F336AB00EB3E83 /* ARArtworkBlurbView.m */; };
+		DB11A43E1AB3359100CA81D3 /* ArtisanSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DB11A43C1AB3359100CA81D3 /* ArtisanSDK.bundle */; };
+		DB11A43F1AB3359100CA81D3 /* ArtisanSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB11A43D1AB3359100CA81D3 /* ArtisanSDK.framework */; };
 		DCA78A9CCA74D94C34C35156 /* libPods-Artsy Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D6BDCA48472E439B9D79CB /* libPods-Artsy Tests.a */; };
 		E60673B319BE4E8C00EF05EB /* full_logo_white_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E60673B119BE4E8C00EF05EB /* full_logo_white_small@2x.png */; };
 		E611847018D78068000FE4C9 /* ARMessageItemProviderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E611846F18D78068000FE4C9 /* ARMessageItemProviderTests.m */; };
@@ -1225,28 +1224,6 @@
 		8A6745B7A19EEDA119AEA48E /* Pods-Artsy Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artsy Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Artsy Tests/Pods-Artsy Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E3DD2A89F196F5E5BFB9689 /* Pods-Artsy Tests.store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artsy Tests.store.xcconfig"; path = "Pods/Target Support Files/Pods-Artsy Tests/Pods-Artsy Tests.store.xcconfig"; sourceTree = "<group>"; };
 		A060C6085108B7738F5ADD02 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		A485BBD81A8BE80400304DFF /* ArtisanSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArtisanSDK.bundle; path = "../../Library/Developer/Xcode/DerivedData/UXFlip-Testing-eqlbtjtodcgnlbfpqegfcfrqwmua/Build/Products/Debug-iphoneos/ArtisanSDK.bundle"; sourceTree = "<group>"; };
-		A485BBDA1A8BE80400304DFF /* ARBillboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARBillboardManager.h; sourceTree = "<group>"; };
-		A485BBDB1A8BE80400304DFF /* ARExperiment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARExperiment.h; sourceTree = "<group>"; };
-		A485BBDC1A8BE80400304DFF /* ARExperimentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARExperimentDetails.h; sourceTree = "<group>"; };
-		A485BBDD1A8BE80400304DFF /* ARExperimentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARExperimentManager.h; sourceTree = "<group>"; };
-		A485BBDE1A8BE80400304DFF /* ARInCodeExperimentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARInCodeExperimentDetails.h; sourceTree = "<group>"; };
-		A485BBDF1A8BE80400304DFF /* ARManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARManager.h; sourceTree = "<group>"; };
-		A485BBE01A8BE80400304DFF /* ARPowerHookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARPowerHookManager.h; sourceTree = "<group>"; };
-		A485BBE11A8BE80400304DFF /* ARPowerHookVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARPowerHookVariable.h; sourceTree = "<group>"; };
-		A485BBE21A8BE80400304DFF /* ARProfileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARProfileManager.h; sourceTree = "<group>"; };
-		A485BBE31A8BE80400304DFF /* ARPurchaseWorkflowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARPurchaseWorkflowManager.h; sourceTree = "<group>"; };
-		A485BBE41A8BE80400304DFF /* ARSocialSharingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSocialSharingManager.h; sourceTree = "<group>"; };
-		A485BBE51A8BE80400304DFF /* ARStoreKitTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARStoreKitTracker.h; sourceTree = "<group>"; };
-		A485BBE61A8BE80400304DFF /* ArtisanEventTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtisanEventTags.h; sourceTree = "<group>"; };
-		A485BBE71A8BE80400304DFF /* ArtisanSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtisanSDK.h; sourceTree = "<group>"; };
-		A485BBE81A8BE80400304DFF /* ARTrackingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTrackingManager.h; sourceTree = "<group>"; };
-		A485BBE91A8BE80400304DFF /* UIView+ArtisanEventTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ArtisanEventTags.h"; sourceTree = "<group>"; };
-		A485BBEA1A8BE80400304DFF /* UIView+ArtisanNameTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ArtisanNameTag.h"; sourceTree = "<group>"; };
-		A485BBEB1A8BE80400304DFF /* UIViewController+ArtisanEventTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ArtisanEventTags.h"; sourceTree = "<group>"; };
-		A485BBEC1A8BE80400304DFF /* UIViewController+ArtisanNameTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ArtisanNameTag.h"; sourceTree = "<group>"; };
-		A485BBED1A8BE80400304DFF /* libARSBJSON.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libARSBJSON.a; path = "../../Library/Developer/Xcode/DerivedData/UXFlip-Testing-eqlbtjtodcgnlbfpqegfcfrqwmua/Build/Products/Debug-iphoneos/libARSBJSON.a"; sourceTree = "<group>"; };
-		A485BBEE1A8BE80400304DFF /* libArtisanSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libArtisanSDK.a; path = "../../Library/Developer/Xcode/DerivedData/UXFlip-Testing-eqlbtjtodcgnlbfpqegfcfrqwmua/Build/Products/Debug-iphoneos/libArtisanSDK.a"; sourceTree = "<group>"; };
 		A485BBF21A8BEA7400304DFF /* ARTLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTLogger.h; sourceTree = "<group>"; };
 		A485BBF31A8BEA7400304DFF /* ARTLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTLogger.m; sourceTree = "<group>"; };
 		B30FEF59181EEA47009E4EAD /* ARBidButtonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARBidButtonTests.m; sourceTree = "<group>"; };
@@ -1306,6 +1283,11 @@
 		CBB25B3B17F36DDE00C31446 /* ARFeaturedArtworksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARFeaturedArtworksViewController.m; sourceTree = "<group>"; };
 		CBB469CE181F1F1200B5692B /* Bid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bid.h; sourceTree = "<group>"; };
 		CBB469CF181F1F1200B5692B /* Bid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bid.m; sourceTree = "<group>"; };
+		DB11A4391AB332CC00CA81D3 /* ArtisanEnvironmentConfigurationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtisanEnvironmentConfigurationModel.h; path = "../ArtisanDemo2/ArtisanDemo/Extra Artisan Headers/ArtisanEnvironmentConfigurationModel.h"; sourceTree = "<group>"; };
+		DB11A43A1AB332CC00CA81D3 /* ArtisanEnvironments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtisanEnvironments.h; path = "../ArtisanDemo2/ArtisanDemo/Extra Artisan Headers/ArtisanEnvironments.h"; sourceTree = "<group>"; };
+		DB11A43B1AB332CC00CA81D3 /* ArtisanJSONUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtisanJSONUtils.h; path = "../ArtisanDemo2/ArtisanDemo/Extra Artisan Headers/ArtisanJSONUtils.h"; sourceTree = "<group>"; };
+		DB11A43C1AB3359100CA81D3 /* ArtisanSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArtisanSDK.bundle; path = "../../../Library/Developer/Xcode/DerivedData/UXFlip-Testing-ghvuxcncwsmdmxbwvtpxcnjyxgfy/Build/Products/Debug-iphoneos/ArtisanSDK.bundle"; sourceTree = "<group>"; };
+		DB11A43D1AB3359100CA81D3 /* ArtisanSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ArtisanSDK.framework; path = "../../../Library/Developer/Xcode/DerivedData/UXFlip-Testing-ghvuxcncwsmdmxbwvtpxcnjyxgfy/Build/Products/Debug-iphoneos/ArtisanSDK.framework"; sourceTree = "<group>"; };
 		E2C583DC5F5EBC24D3CC3B76 /* Pods.demo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.demo.xcconfig; path = "Pods/Target Support Files/Pods/Pods.demo.xcconfig"; sourceTree = "<group>"; };
 		E60673B119BE4E8C00EF05EB /* full_logo_white_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "full_logo_white_small@2x.png"; sourceTree = "<group>"; };
 		E611846F18D78068000FE4C9 /* ARMessageItemProviderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMessageItemProviderTests.m; sourceTree = "<group>"; };
@@ -1422,11 +1404,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB11A43F1AB3359100CA81D3 /* ArtisanSDK.framework in Frameworks */,
 				60935A461A69CFEE00129CE1 /* WebKit.framework in Frameworks */,
-				A485BBF01A8BE80400304DFF /* libARSBJSON.a in Frameworks */,
 				60935A441A69CFE700129CE1 /* MobileCoreServices.framework in Frameworks */,
 				7BAB70E261299573481071A9 /* libPods.a in Frameworks */,
-				A485BBF11A8BE80600304DFF /* libArtisanSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2193,7 +2174,7 @@
 		49BA7DF41655ABE600C06572 = {
 			isa = PBXGroup;
 			children = (
-				A485BBD71A8BE7F000304DFF /* ArtisanSDK */,
+				DB11A4331AB330EC00CA81D3 /* Artisan SDK */,
 				60FFE3D5188E916C0012B485 /* Documentation */,
 				49BA7E091655ABE600C06572 /* Artsy */,
 				B3ECE82B1819D1E6009F5C5B /* Artsy Tests */,
@@ -3261,44 +3242,6 @@
 			name = Fair;
 			sourceTree = "<group>";
 		};
-		A485BBD71A8BE7F000304DFF /* ArtisanSDK */ = {
-			isa = PBXGroup;
-			children = (
-				A485BBD81A8BE80400304DFF /* ArtisanSDK.bundle */,
-				A485BBD91A8BE80400304DFF /* ARUXFLIPHeaders */,
-				A485BBED1A8BE80400304DFF /* libARSBJSON.a */,
-				A485BBEE1A8BE80400304DFF /* libArtisanSDK.a */,
-			);
-			name = ArtisanSDK;
-			sourceTree = "<group>";
-		};
-		A485BBD91A8BE80400304DFF /* ARUXFLIPHeaders */ = {
-			isa = PBXGroup;
-			children = (
-				A485BBDA1A8BE80400304DFF /* ARBillboardManager.h */,
-				A485BBDB1A8BE80400304DFF /* ARExperiment.h */,
-				A485BBDC1A8BE80400304DFF /* ARExperimentDetails.h */,
-				A485BBDD1A8BE80400304DFF /* ARExperimentManager.h */,
-				A485BBDE1A8BE80400304DFF /* ARInCodeExperimentDetails.h */,
-				A485BBDF1A8BE80400304DFF /* ARManager.h */,
-				A485BBE01A8BE80400304DFF /* ARPowerHookManager.h */,
-				A485BBE11A8BE80400304DFF /* ARPowerHookVariable.h */,
-				A485BBE21A8BE80400304DFF /* ARProfileManager.h */,
-				A485BBE31A8BE80400304DFF /* ARPurchaseWorkflowManager.h */,
-				A485BBE41A8BE80400304DFF /* ARSocialSharingManager.h */,
-				A485BBE51A8BE80400304DFF /* ARStoreKitTracker.h */,
-				A485BBE61A8BE80400304DFF /* ArtisanEventTags.h */,
-				A485BBE71A8BE80400304DFF /* ArtisanSDK.h */,
-				A485BBE81A8BE80400304DFF /* ARTrackingManager.h */,
-				A485BBE91A8BE80400304DFF /* UIView+ArtisanEventTags.h */,
-				A485BBEA1A8BE80400304DFF /* UIView+ArtisanNameTag.h */,
-				A485BBEB1A8BE80400304DFF /* UIViewController+ArtisanEventTags.h */,
-				A485BBEC1A8BE80400304DFF /* UIViewController+ArtisanNameTag.h */,
-			);
-			name = ARUXFLIPHeaders;
-			path = "../../Library/Developer/Xcode/DerivedData/UXFlip-Testing-eqlbtjtodcgnlbfpqegfcfrqwmua/Build/Products/Debug-iphoneos/ARUXFLIPHeaders";
-			sourceTree = "<group>";
-		};
 		B31BBE0F181EF9F7001C623C /* View Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -3384,6 +3327,26 @@
 				B316E2F6181713110086CCDB /* Bidder.m */,
 			);
 			name = Auctions;
+			sourceTree = "<group>";
+		};
+		DB11A4331AB330EC00CA81D3 /* Artisan SDK */ = {
+			isa = PBXGroup;
+			children = (
+				DB11A43C1AB3359100CA81D3 /* ArtisanSDK.bundle */,
+				DB11A43D1AB3359100CA81D3 /* ArtisanSDK.framework */,
+				DB11A4381AB332BA00CA81D3 /* Extra Artisan Headers */,
+			);
+			name = "Artisan SDK";
+			sourceTree = "<group>";
+		};
+		DB11A4381AB332BA00CA81D3 /* Extra Artisan Headers */ = {
+			isa = PBXGroup;
+			children = (
+				DB11A4391AB332CC00CA81D3 /* ArtisanEnvironmentConfigurationModel.h */,
+				DB11A43A1AB332CC00CA81D3 /* ArtisanEnvironments.h */,
+				DB11A43B1AB332CC00CA81D3 /* ArtisanJSONUtils.h */,
+			);
+			name = "Extra Artisan Headers";
 			sourceTree = "<group>";
 		};
 		E619969919B9094F00DB273C /* Swizzles */ = {
@@ -3555,7 +3518,7 @@
 				ORGANIZATIONNAME = Artsy;
 				TargetAttributes = {
 					49BA7DFE1655ABE600C06572 = {
-						DevelopmentTeam = 23KMWZ572J;
+						DevelopmentTeam = SJ3G36B276;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -3639,7 +3602,7 @@
 				E6543CDB18AD795E00A6B9AF /* Parallax_Overlay_Bottom@2x.png in Resources */,
 				5E6621DD19768F750064FC52 /* MapIcon@2x.png in Resources */,
 				E60673B319BE4E8C00EF05EB /* full_logo_white_small@2x.png in Resources */,
-				A485BBEF1A8BE80400304DFF /* ArtisanSDK.bundle in Resources */,
+				DB11A43E1AB3359100CA81D3 /* ArtisanSDK.bundle in Resources */,
 				608B707017D4A1C80088A56C /* BackArrow_Highlighted@2x.png in Resources */,
 				3C4AE98719094DAA009C0E8B /* MapAnnotation_Search@2x.png in Resources */,
 				3C4AE98519094DAA009C0E8B /* MapAnnotation_Restroom@2x.png in Resources */,
@@ -4282,6 +4245,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"/Users/gowie/Downloads/artisan-sdk-2.4.1C",
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/UXFlip-Testing-ghvuxcncwsmdmxbwvtpxcnjyxgfy/Build/Products/Debug-iphoneos",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
@@ -4426,6 +4392,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"/Users/gowie/Downloads/artisan-sdk-2.4.1C",
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/UXFlip-Testing-ghvuxcncwsmdmxbwvtpxcnjyxgfy/Build/Products/Debug-iphoneos",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
@@ -4594,6 +4563,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"/Users/gowie/Downloads/artisan-sdk-2.4.1C",
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/UXFlip-Testing-ghvuxcncwsmdmxbwvtpxcnjyxgfy/Build/Products/Debug-iphoneos",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
@@ -4809,6 +4781,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"/Users/gowie/Downloads/artisan-sdk-2.4.1C",
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/UXFlip-Testing-ghvuxcncwsmdmxbwvtpxcnjyxgfy/Build/Products/Debug-iphoneos",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
