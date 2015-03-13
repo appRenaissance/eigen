@@ -131,6 +131,13 @@ static ARAppDelegate *_sharedInstance = nil;
      // Artisan Start //
     ///////////////////
     
+    // In-Code Experiment Registration
+    ///////////////////////////////////
+
+    [ARExperimentManager registerExperiment:SearchInfoTextInCodeExperimentName description:@"Testing the text of the search page"];
+    [ARExperimentManager addVariant:SearchInfoTextDefaultVariationName forExperiment:SearchInfoTextInCodeExperimentName isDefault:YES];
+    [ARExperimentManager addVariant:SearchInfoAllTheThingsVariationName forExperiment:SearchInfoTextInCodeExperimentName];
+    
     // Configuration
     /////////////////
     

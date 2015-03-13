@@ -12,3 +12,7 @@ NSString *YouTabTextPowerHookId = @"YouTabText";
 NSString *DefaultSearchTextPowerHookId = @"DefaultSearchText";
 NSString *SelectedFavoritesTabPowerHookId = @"SelectedFavoritesTab";
 NSString *ShowAlertWithTextBlockPowerHookId = @"ShowAlertWithTextBlock";
+
+NSString *SearchInfoTextInCodeExperimentName = @"Search Info Text In-Code Experiment";
+NSString *SearchInfoTextDefaultVariationName = @"Default Info Text";
+NSString *SearchInfoAllTheThingsVariationName = @"All The Things Info Text";

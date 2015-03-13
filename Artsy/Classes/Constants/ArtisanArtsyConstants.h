@@ -12,3 +12,7 @@ extern NSString *YouTabTextPowerHookId;
 extern NSString *DefaultSearchTextPowerHookId;
 extern NSString *SelectedFavoritesTabPowerHookId;
 extern NSString *ShowAlertWithTextBlockPowerHookId;
+
+extern NSString *SearchInfoTextInCodeExperimentName;
+extern NSString *SearchInfoTextDefaultVariationName;
+extern NSString *SearchInfoAllTheThingsVariationName;

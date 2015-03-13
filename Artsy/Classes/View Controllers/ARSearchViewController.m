@@ -106,7 +106,12 @@
     infoLabel.backgroundColor = [UIColor clearColor];
     infoLabel.hidden = YES;
     _infoLabel = infoLabel;
-    [self setDefaultInfoLabelText];
+    
+    if ([ARExperimentManager isCurrentVariant:SearchInfoTextDefaultVariationName forExperiment:SearchInfoTextInCodeExperimentName]) {
+        [self setDefaultInfoLabelText];
+    } else if ([ARExperimentManager isCurrentVariant:SearchInfoAllTheThingsVariationName forExperiment:SearchInfoTextInCodeExperimentName]) {
+        self.infoLabel.text = @"Search All The Things. There's no restrictions and everything is free!";
+    }
 
     // search spinner
     UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
@@ -124,6 +129,8 @@
 {
     [self.view layoutSubviews];
     [super viewDidAppear:animated];
+    
+    [ARExperimentManager setExperimentViewedForExperiment:SearchInfoTextInCodeExperimentName];
 
     [self.textField becomeFirstResponder];
 }
@@ -236,6 +243,8 @@
 
 - (void)fetchSearchResults:(NSString *)text replace:(BOOL)replaceResults
 {
+    [ARExperimentManager setTargetReachedForExperiment:SearchInfoTextInCodeExperimentName description:@"User Searched!"];
+
     @weakify(self);
     _searchRequest = [self searchWithQuery:text success:^(NSArray *results) {
         @strongify(self);
