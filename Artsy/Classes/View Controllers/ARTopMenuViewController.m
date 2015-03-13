@@ -67,6 +67,78 @@ static const CGFloat ARSearchMenuButtonDimension = 46;
         NSString *favoritesButtonText = [ARPowerHookManager getValueForHookById:YouTabTextPowerHookId];
         NSLog(@"favoritesButtonText value: %@", favoritesButtonText);
         [favoritesButton setTitle:favoritesButtonText forState:UIControlStateNormal];
+        
+        
+        NSLog(@"--------- ALL THE EXPERIMENT DETAILS -------------");
+        NSLog(@"--------------------------------------------------");
+        NSArray *experimentDetails = [ARExperimentManager getCurrentExperimentDetails];
+        NSLog(@"experimentDetails: %@", experimentDetails);
+        [experimentDetails enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            ARExperimentDetails *details = (ARExperimentDetails*)obj;
+            NSLog(@"ExperimentDetails.to_s: %@", details);
+            NSLog(@"experimentId: %@", [details experimentId]);
+            NSLog(@"experimentName: %@", [details experimentName]);
+            NSLog(@"experimentType: %@", [details experimentType]);
+            NSLog(@"variation ID: %@", [details currentVariantId]);
+            NSLog(@"variation name: %@", [details currentVariantName]);
+        }];
+        
+        NSLog(@"--------- IN CODE EXPERIMENT DETAILS -------------");
+        NSLog(@"--------------------------------------------------");
+        NSDictionary *inCodeDetails = [ARExperimentManager getInCodeExperimentDetails];
+        [inCodeDetails enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+            ARInCodeExperimentDetails *details = (ARInCodeExperimentDetails*)obj;
+            NSLog(@"ExperimentDetails.to_s: %@", details);
+            NSLog(@"experimentId: %@", [details experimentId]);
+            NSLog(@"experimentName: %@", [details experimentName]);
+            NSLog(@"experimentType: %@", [details experimentType]);
+            NSLog(@"variation ID: %@", [details currentVariantId]);
+            NSLog(@"variation name: %@", [details currentVariantName]);
+            NSLog(@"experiment Start: %@", [details startDate]);
+            NSLog(@"experiment End: %@", [details endDate]);
+            NSLog(@"experiment in-code name: %@", [details inCodeName]);
+            NSLog(@"experiment default variant: %@", [details defaultVariant]);
+            NSLog(@"experiment description: %@", [details experimentDescription]);
+            NSLog(@"experiment isRunning: %@", [details isRunning] ? @"YES" : @"NO");
+        }];
+
+        NSLog(@"--------- POWER HOOK VARIABLE EXPERIMENT DETAILS -------------");
+        NSLog(@"--------------------------------------------------------------");
+        NSDictionary *powerHookDetails = [ARPowerHookManager getPowerHookVariableExperimentDetails];
+        NSLog(@"powerHookDetails: %@", powerHookDetails);
+        [powerHookDetails enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+            NSLog(@"Details key: %@", key);
+            ARPowerHookExperimentDetails *details = (ARPowerHookExperimentDetails*)obj;
+            NSLog(@"ExperimentDetails.to_s: %@", details);
+            NSLog(@"experimentId: %@", [details experimentId]);
+            NSLog(@"experimentName: %@", [details experimentName]);
+            NSLog(@"experimentType: %@", [details experimentType]);
+            NSLog(@"experiment Start: %@", [details experimentStartDate]);
+            NSLog(@"experiment End: %@", [details experimentEndDate]);
+            NSLog(@"experiment isRunning: %@", [details isRunning] ? @"YES" : @"NO");
+            NSLog(@"experiment hook id: %@", [details hookId]);
+            NSLog(@"variation ID: %@", [details currentVariantId]);
+            NSLog(@"variation name: %@", [details currentVariantName]);
+        }];
+        
+        NSLog(@"--------- POWER HOOK BLOCK EXPERIMENT DETAILS -------------");
+        NSLog(@"-----------------------------------------------------------");
+        NSDictionary *powerHookBlockDetails = [ARPowerHookManager getPowerHookBlockExperimentDetails];
+        NSLog(@"powerHookBlockDetails: %@", powerHookBlockDetails);
+        [powerHookBlockDetails enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+            NSLog(@"Details key: %@", key);
+            ARPowerHookExperimentDetails *details = (ARPowerHookExperimentDetails*)obj;
+            NSLog(@"ExperimentDetails.to_s: %@", details);
+            NSLog(@"experimentId: %@", [details experimentId]);
+            NSLog(@"experimentName: %@", [details experimentName]);
+            NSLog(@"experimentType: %@", [details experimentType]);
+            NSLog(@"experiment Start: %@", [details experimentStartDate]);
+            NSLog(@"experiment End: %@", [details experimentEndDate]);
+            NSLog(@"experiment isRunning: %@", [details isRunning] ? @"YES" : @"NO");
+            NSLog(@"experiment hook id: %@", [details hookId]);
+            NSLog(@"variation ID: %@", [details currentVariantId]);
+            NSLog(@"variation name: %@", [details currentVariantName]);
+        }];
     }];
 
     NSArray *buttons = @[searchButton, homeButton, browseButton, favoritesButton];
